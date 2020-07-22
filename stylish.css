@@ -1,35 +1,43 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-
 .flex-header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 50px;
+    width: 100%;
+    flex: 1;
 }
 
-.codepen{
+.codepen2{
     margin-left: auto;
+   
+    
 }
 
-.contact{
+.contact2{
     margin-left: 150px;
     margin-right: 50px;
+   
 }
 
 .in-touch{
     color: blue;
+    
 }
 
-.github{
+.github2{
     margin-right: 150px;
     margin-left: 50px;
+    
 }
 
 .top-wrapper{
@@ -37,30 +45,31 @@ a{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 100px;
+    width: 100%;
+    flex: 1;
 }
 
 span{
     color: blue;
 }
 
-.picture{
-    margin-left: 300px;
-}
-.content{
-    margin-left: 100px;
-}
+
 
 .picture img{
     width: 200px;
     height: 200px;
     box-shadow: 20px 20px blue;
     border-radius: 50%;
-
+    
 }
 
 .central-part{
     background-color: lightgray;
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 100%;
     
 } 
 
@@ -107,8 +116,9 @@ span{
 
 .sticky-part{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .google-picture{
@@ -117,14 +127,8 @@ span{
     justify-content: flex-end;
 }
 
-.sticky-picture{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    
-}
 .sticky-picture img{
-   width: 1150px; 
+   width: 100%; 
    margin-bottom: 100px;
 }
 
@@ -136,4 +140,12 @@ span{
 }
 
 
+@media all and (max-width: 678px){
+  
+    .top-wrapper{
+        flex-wrap: wrap;
+    }  
+    
+  
+}
 
